@@ -3,7 +3,6 @@ package bob
 
 import(
 	"strings"
-//	"unicode"
 )
 
 // Hey returns Bob's remark
@@ -16,20 +15,21 @@ func Hey(remark string) string {
 	yell := isYelling(remark)
 	question := isQuestion(remark)
 
-	if(question){
-		if(yell){
+	if question {
+		if yell {
 			return  "Calm down, I know what I'm doing!"
 		}
 		return "Sure."
 	}
 	
-	if(yell){
+	if yell {
 		return "Whoa, chill out!"
 	}
 	
 	return "Whatever."
 }
 
+// isUpper method to check if every character is in upper case
 func isUpper(s string) bool {
 	alphaFlag := false
 	
@@ -47,16 +47,18 @@ func isUpper(s string) bool {
 	return false
 }
 
+// isYelling method to check if remark is a yelling
 func isYelling(remark string) bool{
 	if isUpper(remark){ 
-		return true;
+		return true
 	}
-	return false;
+	return false
 }
 
+// isQuestion method to check if remark is a question
 func isQuestion(remark string) bool{
-	if(remark[len(remark) -1 ] == '?'){
-		return true;
+	if remark[len(remark) -1 ] == '?' {
+		return true
 	}
-	return false;
+	return false
 }
