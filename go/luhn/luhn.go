@@ -2,7 +2,6 @@
 package luhn
 
 import (
-	"strconv"
 	"strings"
 )
 
@@ -16,31 +15,27 @@ func Valid(str string) bool {
 
 	flag := false
 
-	str2 := ""
+	result := 0
 
 	for i := len(str) - 1; i >= 0; i-- {
 		if str[i] < '0' || str[i] > '9' {
 			return false
 		}
 
+		chr := int(str[i])
 		if flag {
 
-			val := (int)(str[i]-48) * 2
+			val := chr * 2
 			if val > 9 {
-				str2 = strconv.Itoa(val-9) + str2
+				result += val - 9
 			} else {
-				str2 = strconv.Itoa(val) + str2
+				result += val
 			}
 
 		} else {
-			str2 = string(str[i]) + str2
+			result += chr
 		}
 		flag = !flag
-	}
-
-	result := 0
-	for _, c := range str2 {
-		result += int(c) - 48
 	}
 
 	if result%10 == 0 {
