@@ -1,4 +1,4 @@
-// Package scrabble has methods to give score of a word
+// Package scrabble has functions to give score of a word
 package scrabble
 
 import "strings"

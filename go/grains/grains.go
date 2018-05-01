@@ -1,4 +1,4 @@
-// Package grains provides methods to return the number of grain in a chessboard
+// Package grains provides function to return the number of grain in a chessboard
 package grains
 
 import (

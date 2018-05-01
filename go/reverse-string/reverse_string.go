@@ -1,4 +1,4 @@
-// Package reverse has methods to reverse a string
+// Package reverse has functions to reverse a string
 package reverse
 
 // String returns a string in reverse order

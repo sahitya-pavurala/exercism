@@ -1,4 +1,4 @@
-// Package acronym has method to give acronyms for strings
+// Package acronym has functions to give acronyms for strings
 package acronym
 
 import "strings"

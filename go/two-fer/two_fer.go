@@ -1,4 +1,4 @@
-// Package twofer should have a package comment that summarizes what it's about.
+// Package twofer has function ShareWith
 package twofer
 
 import "fmt"

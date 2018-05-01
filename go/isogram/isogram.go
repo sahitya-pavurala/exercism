@@ -1,4 +1,4 @@
-// Package isogram provides methods to check is string is isogram
+// Package isogram provides functions to check is string is isogram
 package isogram
 
 import "strings"

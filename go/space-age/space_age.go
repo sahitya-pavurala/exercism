@@ -1,4 +1,4 @@
-// Package space has methods to give space age
+// Package space has functions to give space age
 package space
 
 func Age(seconds float64, planet string) float64 {

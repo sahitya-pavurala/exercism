@@ -1,4 +1,4 @@
-// Package luhn provides methods to implement luhn's algorithm
+// Package luhn provides functions to implement luhn's algorithm
 package luhn
 
 import (

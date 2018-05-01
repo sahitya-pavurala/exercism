@@ -1,4 +1,4 @@
-// Package gigasecond has a method to return the time after adding giga seconds
+// Package gigasecond has a function to return the time after adding giga seconds
 package gigasecond
 
 import "time"

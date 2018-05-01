@@ -1,4 +1,4 @@
-// Package raindrops has methods to convert numbers to strings
+// Package raindrops has functions to convert numbers to strings
 package raindrops
 
 import "fmt"

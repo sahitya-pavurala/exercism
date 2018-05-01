@@ -1,4 +1,4 @@
-//Package hamming has methods to get the hamming ditance betwenn two DNA signatures
+//Package hamming has functions to get the hamming ditance betwenn two DNA signatures
 package hamming
 
 import "fmt"

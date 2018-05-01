@@ -1,4 +1,4 @@
-// Package diffsquares provides methods to give difference between square of the result and the result of the squares
+// Package diffsquares provides function to give difference between square of the result and the result of the squares
 package diffsquares
 
 // SquareOfSums return square of the sum of n numbers
